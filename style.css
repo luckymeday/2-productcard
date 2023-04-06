@@ -3,55 +3,56 @@ body {
 }
 .container {
   display: flex;
-
   background-color: hsl(0, 0%, 100%);
-  width: 400px;
+  width: 600px;
   margin: auto;
   margin-top: 100px;
   margin-bottom: 100px;
   border: blue solid 1px;
-  border-radius: 30px;
+  border-radius: 15px;
 }
 @media (max-width: 375px) {
   .container {
-    background-color: blue;
+    /* background-color: blue; */
     flex-direction: column;
   }
 }
-/* .firsthalf {
-  position: absolute;
-} */
+.firsthalf {
+  display: flex;
+  justify-content: center;
+}
 .image-desktop {
-  display: inline-block;
-  width: 200px;
-  overflow: hidden;
-  object-fit: cover;
-  /* top: 100%; */
+  width: 300px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
 }
 .wording {
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 30px;
 }
 .cardtitle {
   font-family: "Montserrat", sans-serif;
   color: hsl(228, 12%, 48%);
+  font-size: small;
 }
 .slogan {
   font-family: "Fraunces", serif;
   font-size: 30px;
+  line-height: 1.2;
+  font-size: 34px;
 }
 
 .bodycopy {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: hsl(228, 12%, 48%);
+  line-height: 1.8;
 }
 
 .price {
   font-family: "Fraunces", serif;
   display: flex;
   color: hsl(158, 36%, 37%);
-  font-size: 20px;
+  font-size: 23px;
 }
 .strikethrough {
   font-size: 11px;
@@ -64,6 +65,11 @@ button {
   background-color: hsl(158, 36%, 37%);
   color: hsl(0, 0%, 100%);
   cursor: pointer;
+  width: 230px;
+  border: 0px;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 5px;
 }
 
 .attribution {
