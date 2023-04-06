@@ -8,14 +8,8 @@ body {
   margin: auto;
   margin-top: 100px;
   margin-bottom: 100px;
-  border: blue solid 1px;
+  /* border: blue solid 1px; */
   border-radius: 15px;
-}
-@media (max-width: 375px) {
-  .container {
-    /* background-color: blue; */
-    flex-direction: column;
-  }
 }
 .firsthalf {
   display: flex;
@@ -23,6 +17,9 @@ body {
 }
 .image-desktop {
   width: 300px;
+  max-width: 100%;
+  min-width: 300px;
+  height: auto;
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
 }
@@ -32,22 +29,19 @@ body {
 .cardtitle {
   font-family: "Montserrat", sans-serif;
   color: hsl(228, 12%, 48%);
-  font-size: small;
+  font-size: 17px;
 }
 .slogan {
   font-family: "Fraunces", serif;
-  font-size: 30px;
   line-height: 1.2;
   font-size: 34px;
 }
-
 .bodycopy {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: hsl(228, 12%, 48%);
   line-height: 1.8;
 }
-
 .price {
   font-family: "Fraunces", serif;
   display: flex;
@@ -59,19 +53,77 @@ body {
   color: hsl(228, 12%, 48%);
   font-family: "Montserrat", sans-serif;
   padding-left: 30px;
+  padding-top: 7px;
 }
-
+img {
+  height: 1em;
+}
 button {
   background-color: hsl(158, 36%, 37%);
   color: hsl(0, 0%, 100%);
   cursor: pointer;
   width: 230px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
   border: 0px;
   padding: 10px;
-  font-family: "Montserrat", sans-serif;
-  border-radius: 5px;
+  border-radius: 8px;
 }
-
 .attribution {
   text-align: center;
+}
+@media (max-width: 375px) {
+  .container {
+    /* background-color: cadetblue; */
+    flex-direction: column;
+  }
+  .image-desktop {
+    width: 375px;
+    height: 470px;
+    min-width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 0px;
+  }
+  .wording {
+    padding: 40px;
+  }
+  .slogan {
+    font-family: "Fraunces", serif;
+    font-size: 48px;
+    line-height: 1.2;
+    margin-top: -5px;
+  }
+  .bodycopy {
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.8;
+    margin-top: -28px;
+  }
+  .price {
+    font-family: "Fraunces", serif;
+    display: flex;
+    color: hsl(158, 36%, 37%);
+    font-size: 50px;
+  }
+  .strikethrough {
+    font-size: 25px;
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat", sans-serif;
+    padding-left: 30px;
+    padding-top: 18px;
+  }
+  button {
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    min-width: 100%;
+    border: 0px;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+  }
 }
